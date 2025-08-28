@@ -31,7 +31,7 @@ CustomerB,2024-05-09T13:00:00.000Z,120.0,220.0,160.0,180.0,230.0,310.0
 
 ### Customization
 Modify the following parameters in the script to suit your needs:
-- `window_size = 50`: Size of the rolling window for threshold calculation.
+- `window_size = 150`: Size of the rolling window for threshold calculation.
 - `upper_percentile = 75`: Upper percentile threshold (e.g., 90th percentile).
 - `lower_percentile = 45`: Lower percentile threshold (e.g., 10th percentile).
 - `z_score_threshold = 3`: Z-score threshold for extreme values.
