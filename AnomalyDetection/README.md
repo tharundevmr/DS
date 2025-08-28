@@ -53,7 +53,6 @@ Modify the following parameters in the script to suit your needs:
 - **No Legends or Shading**: Clean plots without legends or shaded regions.
 
 ## Troubleshooting
-- **Warning: MAXTICKS Exceeded**: The script uses `MaxNLocator` to limit ticks to 10, resolving the `Locator attempting to generate 567073 ticks` warning. If issues persist, increase `nbins` in `MaxNLocator`.
 - **Threshold Issues**: If thresholds still appear influenced by anomalies, verify the data range and adjust `window_size`.
 - **Missing Data**: Ensure all required columns are present in the CSV; the script skips invalid or empty data.
 
