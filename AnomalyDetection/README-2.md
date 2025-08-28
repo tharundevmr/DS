@@ -2,9 +2,8 @@
 
 ## Project Overview
 
-This project implements a multivariate anomaly detection system using an LSTM-based autoencoder and Isolation Forest. The system analyzes time-series data for individual customers, detecting anomalies where at least two out of three specified metrics (`metric_4`, `metric_5`, `metric_6`) exhibit anomalous behavior that persists for at least 2 minutes. Anomalies are visualized as red scatter points on line graphs, highlighting specific metrics that are anomalous during persistent periods.
+This project implements a multivariate anomaly detection system using an LSTM-based autoencoder and Isolation Forest. The system analyzes time-series data for individual customers, detecting anomalies where at least two out of three specified metrics that exhibit anomalous behavior that persists for at least 2 minutes. Anomalies are visualized as red scatter points on line graphs, highlighting specific metrics that are anomalous during persistent periods.
 
-The input data is expected to be a CSV file (`MetricsAnomalyMonitoring.csv`) with columns: `CustomerName`, `Timestamp`, `metric_4`, `metric_5`, and `metric_6`.
 
 ## Features
 
