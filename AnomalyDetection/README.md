@@ -13,7 +13,7 @@ The script processes CSV data containing timestamps, customer names, and multipl
 The script expects a CSV file (`your_data.csv` by default) with the following columns:
 - `CustomerName`: Name of the customer (string).
 - `Timestamp`: Date and time in ISO format with UTC (e.g., `2024-05-09T12:58:00.000Z`).
-- `metric_1` to `metric_6`: Numerical values for six metrics.
+- `metric_1` to `metric_4`: Numerical values for six metrics.
 
 Example:
 ```
