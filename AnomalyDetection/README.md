@@ -4,26 +4,8 @@ This project provides a Python-based tool for visualizing and detecting anomalie
 
 ## Overview
 
-The script processes CSV data containing timestamps, customer names, and multiple metric columns, identifying consecutive anomalies using rolling percentile thresholds (90th/10th) and Z-score checks. It produces per-customer plots with customizable parameters and saves the results.
+The script processes CSV data containing timestamps, customer names, and multiple metric columns, identifying consecutive anomalies using rolling percentile thresholds (75th/45th) and Z-score checks. It produces per-customer plots with customizable parameters and saves the results.
 
-## Requirements
-
-- Python 3.9 or later
-- Required libraries:
-  - `pandas`
-  - `numpy`
-  - `matplotlib`
-
-Install dependencies using:
-```bash
-pip install pandas numpy matplotlib
-```
-
-## Installation
-
-1. Clone or download the project files.
-2. Ensure the required libraries are installed as above.
-3. Place your data CSV file in the project directory or update the file path in the script.
 
 ## Usage
 
@@ -50,10 +32,10 @@ CustomerB,2024-05-09T13:00:00.000Z,120.0,220.0,160.0,180.0,230.0,310.0
 ### Customization
 Modify the following parameters in the script to suit your needs:
 - `window_size = 50`: Size of the rolling window for threshold calculation.
-- `upper_percentile = 90`: Upper percentile threshold (e.g., 90th percentile).
-- `lower_percentile = 10`: Lower percentile threshold (e.g., 10th percentile).
+- `upper_percentile = 75`: Upper percentile threshold (e.g., 90th percentile).
+- `lower_percentile = 45`: Lower percentile threshold (e.g., 10th percentile).
 - `z_score_threshold = 3`: Z-score threshold for extreme values.
-- `min_consecutive = 2`: Minimum number of consecutive anomalies to consider.
+- `min_consecutive = 20`: Minimum number of consecutive anomalies to consider.
 - `nbins` in `MaxNLocator(nbins=10)`: Number of ticks on the x-axis (adjust for readability).
 
 ### Output
@@ -77,6 +59,3 @@ Modify the following parameters in the script to suit your needs:
 
 ## Contributing
 Feel free to fork this repository, submit issues, or create pull requests for enhancements.
-
-## License
-This project is provided under the MIT License (see LICENSE file for details).
