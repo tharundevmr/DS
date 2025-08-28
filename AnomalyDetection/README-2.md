@@ -117,7 +117,3 @@ For each customer, the script generates:
 - Implement early stopping for LSTM training to optimize epochs.
 - Support irregular timestamps by interpolating data.
 - Add feature weighting for domain-specific metrics (e.g., prioritize `metric_6` if it represents critical failures).
-
-## License
-
-This project is licensed under the MIT License.
