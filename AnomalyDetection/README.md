@@ -47,7 +47,7 @@ Modify the following parameters in the script to suit your needs:
 - **CSV**: An `anomalies_all_customers.csv` file containing anomaly flags for each metric per customer.
 
 ## Features
-- **Anomaly Detection**: Uses fixed rolling 90th/10th percentile thresholds and Z-score checks, unaffected by anomalies.
+- **Anomaly Detection**: Uses fixed rolling 75th/45th percentile thresholds and Z-score checks, unaffected by anomalies.
 - **Spike Filtering**: Ignores single spikes, marking only consecutive anomalies (default: 2 or more).
 - **Visualization**: Hour-level x-axis with controlled ticks (max 10 per subplot).
 - **No Legends or Shading**: Clean plots without legends or shaded regions.
