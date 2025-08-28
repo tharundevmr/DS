@@ -1,4 +1,4 @@
-# Anomaly Detection Visualization Project
+# Anomaly Detection Project
 
 This project provides a Python-based tool for visualizing and detecting anomalies in time series data, specifically designed for multiple customers and metrics. The tool generates plots and exports anomaly data to a CSV file, with features to ignore single spikes and ensure thresholds are not influenced by anomalies.
 
