@@ -9,7 +9,7 @@ from torch.utils.data import DataLoader, TensorDataset
 import matplotlib.pyplot as plt
 
 # Load data from CSV file (replace 'your_file.csv' with the actual file path)
-data = pd.read_csv('/Users/tharunmr/Documents/workspace/MADTool/MetricsAnomalyMonitoring.csv')
+data = pd.read_csv('/Users/tharunmr/Documents/workspace/MetricsAnomalyMonitoring.csv')
 data['Timestamp'] = pd.to_datetime(data['Timestamp'], errors='coerce')  # Convert to datetime, handle invalid as NaT
 
 # Drop rows with NaT in Timestamp

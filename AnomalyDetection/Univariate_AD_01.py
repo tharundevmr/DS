@@ -6,7 +6,7 @@ from matplotlib.dates import DateFormatter
 from matplotlib.ticker import MaxNLocator
 
 # Load data from CSV file (replace 'your_file.csv' with the actual file path)
-df = pd.read_csv('/Users/tharunmr/Documents/workspace/MADTool/MetricsAnomalyMonitoring.csv')
+df = pd.read_csv('/Users/tharunmr/Documents/workspace/MetricsAnomalyMonitoring.csv')
 df['Timestamp'] = pd.to_datetime(df['Timestamp'], utc=True)  # Ensure Timestamp is tz-aware (UTC)
 
 # Parameters
