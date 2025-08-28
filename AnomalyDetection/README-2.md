@@ -23,30 +23,10 @@ This project implements a multivariate anomaly detection system using an LSTM-ba
   - `sklearn` (scikit-learn)
   - `torch` (PyTorch)
   - `matplotlib`
-- Install dependencies:
-
-  ```bash
-  pip install pandas numpy scikit-learn torch matplotlib
-  ```
 
 ## Usage
 
-1. **Prepare Input Data**:
-
-   - Place the CSV file (`MetricsAnomalyMonitoring.csv`) in the appropriate directory (e.g., `/Users/tharunmr/Documents/workspace/`).
-   - Update the file path in the script if necessary.
-   - The CSV must include `CustomerName`, `Timestamp`, `metric_4`, `metric_5`, and `metric_6`. Missing values in `Timestamp` are dropped, and invalid timestamps are handled as `NaT`.
-
-2. **Run the Script**:
-
-   - Execute the main script (e.g., `multivariate_anomaly_detection.py`):
-
-     ```bash
-     python multivariate_anomaly_detection.py
-     ```
-   - The script processes each customer’s data, trains an LSTM autoencoder, detects anomalies, and generates plots.
-
-3. **Output**:
+**Output**:
 
    - Console output: Summary of persistent anomalies for each customer (e.g., number of anomalous data points where 2+ metrics are anomalous).
    - Visualizations: Line graphs for each metric with red scatter points indicating anomalies in persistent periods (≥2 minutes).
